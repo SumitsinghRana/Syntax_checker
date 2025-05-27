@@ -1,0 +1,74 @@
+digraph {
+	graph [rankdir=TB size="10,6"]
+	0 [label=Module fillcolor=gray shape=box style=filled]
+	1 [label=FunctionDef fillcolor=lightblue shape=box style=filled]
+	0 -> 1
+	2 [label=arguments fillcolor=gray shape=box style=filled]
+	1 -> 2
+	3 [label=arg fillcolor=gray shape=box style=filled]
+	2 -> 3
+	4 [label=arg fillcolor=gray shape=box style=filled]
+	2 -> 4
+	5 [label=Assign fillcolor=lightgreen shape=box style=filled]
+	1 -> 5
+	6 [label=Name fillcolor=gray shape=box style=filled]
+	5 -> 6
+	7 [label=Store fillcolor=gray shape=box style=filled]
+	6 -> 7
+	8 [label=BinOp fillcolor=yellow shape=box style=filled]
+	5 -> 8
+	9 [label=Name fillcolor=gray shape=box style=filled]
+	8 -> 9
+	10 [label=Load fillcolor=gray shape=box style=filled]
+	9 -> 10
+	11 [label=Add fillcolor=gray shape=box style=filled]
+	8 -> 11
+	12 [label=Name fillcolor=gray shape=box style=filled]
+	8 -> 12
+	13 [label=Load fillcolor=gray shape=box style=filled]
+	12 -> 13
+	14 [label=Return fillcolor=cyan shape=box style=filled]
+	1 -> 14
+	15 [label=Name fillcolor=gray shape=box style=filled]
+	14 -> 15
+	16 [label=Load fillcolor=gray shape=box style=filled]
+	15 -> 16
+	17 [label=Assign fillcolor=lightgreen shape=box style=filled]
+	0 -> 17
+	18 [label=Name fillcolor=gray shape=box style=filled]
+	17 -> 18
+	19 [label=Store fillcolor=gray shape=box style=filled]
+	18 -> 19
+	20 [label=Call fillcolor=pink shape=box style=filled]
+	17 -> 20
+	21 [label=Name fillcolor=gray shape=box style=filled]
+	20 -> 21
+	22 [label=Load fillcolor=gray shape=box style=filled]
+	21 -> 22
+	23 [label=Constant fillcolor=gray shape=box style=filled]
+	20 -> 23
+	24 [label=Constant fillcolor=gray shape=box style=filled]
+	20 -> 24
+	25 [label=If fillcolor=red shape=box style=filled]
+	0 -> 25
+	26 [label=Compare fillcolor=gray shape=box style=filled]
+	25 -> 26
+	27 [label=Name fillcolor=gray shape=box style=filled]
+	26 -> 27
+	28 [label=Load fillcolor=gray shape=box style=filled]
+	27 -> 28
+	29 [label=Gt fillcolor=gray shape=box style=filled]
+	26 -> 29
+	30 [label=Constant fillcolor=gray shape=box style=filled]
+	26 -> 30
+	31 [label=Expr fillcolor=gray shape=box style=filled]
+	25 -> 31
+	32 [label=Call fillcolor=pink shape=box style=filled]
+	31 -> 32
+	33 [label=Name fillcolor=gray shape=box style=filled]
+	32 -> 33
+	34 [label=Load fillcolor=gray shape=box style=filled]
+	33 -> 34
+	35 [label=Constant fillcolor=gray shape=box style=filled]
+	32 -> 35
+}

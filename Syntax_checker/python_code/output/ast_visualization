@@ -1,0 +1,36 @@
+digraph {
+	rankdir=TB
+	0 [label=Module fillcolor=lightgray shape=box style=filled]
+	1 [label="Assign
+(Var: x)" fillcolor=lightgreen shape=box style=filled]
+	0 -> 1
+	2 [label="Var (x)" fillcolor=lightgray shape=box style=filled]
+	1 -> 2
+	3 [label=Store fillcolor=lightgray shape=box style=filled]
+	2 -> 3
+	4 [label="Const (10)" fillcolor=lightgray shape=box style=filled]
+	1 -> 4
+	5 [label="If Condition" fillcolor=red shape=box style=filled]
+	0 -> 5
+	6 [label="Compare (>)" fillcolor=lightgray shape=box style=filled]
+	5 -> 6
+	7 [label="Var (x)" fillcolor=lightgray shape=box style=filled]
+	6 -> 7
+	8 [label=Load fillcolor=lightgray shape=box style=filled]
+	7 -> 8
+	9 [label=Gt fillcolor=lightgray shape=box style=filled]
+	6 -> 9
+	10 [label="Const (5)" fillcolor=lightgray shape=box style=filled]
+	6 -> 10
+	11 [label=Expr fillcolor=lightgray shape=box style=filled]
+	5 -> 11
+	12 [label="Call
+(Func: print)" fillcolor=pink shape=box style=filled]
+	11 -> 12
+	13 [label="Var (print)" fillcolor=lightgray shape=box style=filled]
+	12 -> 13
+	14 [label=Load fillcolor=lightgray shape=box style=filled]
+	13 -> 14
+	15 [label="Const (x is greater than 5)" fillcolor=lightgray shape=box style=filled]
+	12 -> 15
+}

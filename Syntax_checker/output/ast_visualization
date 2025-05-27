@@ -1,0 +1,196 @@
+digraph {
+	rankdir=TB
+	0 [label=Module fillcolor=lightgray shape=box style=filled]
+	1 [label=Import fillcolor=lightgray shape=box style=filled]
+	0 -> 1
+	2 [label=alias fillcolor=lightgray shape=box style=filled]
+	1 -> 2
+	3 [label="Assign
+(Var: a)" fillcolor=lightgreen shape=box style=filled]
+	0 -> 3
+	4 [label="Var (a)" fillcolor=lightgray shape=box style=filled]
+	3 -> 4
+	5 [label=Store fillcolor=lightgray shape=box style=filled]
+	4 -> 5
+	6 [label="Const (1)" fillcolor=lightgray shape=box style=filled]
+	3 -> 6
+	7 [label="Assign
+(Var: b)" fillcolor=lightgreen shape=box style=filled]
+	0 -> 7
+	8 [label="Var (b)" fillcolor=lightgray shape=box style=filled]
+	7 -> 8
+	9 [label=Store fillcolor=lightgray shape=box style=filled]
+	8 -> 9
+	10 [label="Const (5)" fillcolor=lightgray shape=box style=filled]
+	7 -> 10
+	11 [label="Assign
+(Var: c)" fillcolor=lightgreen shape=box style=filled]
+	0 -> 11
+	12 [label="Var (c)" fillcolor=lightgray shape=box style=filled]
+	11 -> 12
+	13 [label=Store fillcolor=lightgray shape=box style=filled]
+	12 -> 13
+	14 [label="Const (6)" fillcolor=lightgray shape=box style=filled]
+	11 -> 14
+	15 [label="Assign
+(Var: d)" fillcolor=lightgreen shape=box style=filled]
+	0 -> 15
+	16 [label="Var (d)" fillcolor=lightgray shape=box style=filled]
+	15 -> 16
+	17 [label=Store fillcolor=lightgray shape=box style=filled]
+	16 -> 17
+	18 [label="BinaryOp (-)" fillcolor=yellow shape=box style=filled]
+	15 -> 18
+	19 [label="BinaryOp (**)" fillcolor=yellow shape=box style=filled]
+	18 -> 19
+	20 [label="Var (b)" fillcolor=lightgray shape=box style=filled]
+	19 -> 20
+	21 [label=Load fillcolor=lightgray shape=box style=filled]
+	20 -> 21
+	22 [label=Pow fillcolor=lightgray shape=box style=filled]
+	19 -> 22
+	23 [label="Const (2)" fillcolor=lightgray shape=box style=filled]
+	19 -> 23
+	24 [label=Sub fillcolor=lightgray shape=box style=filled]
+	18 -> 24
+	25 [label="BinaryOp (*)" fillcolor=yellow shape=box style=filled]
+	18 -> 25
+	26 [label="BinaryOp (*)" fillcolor=yellow shape=box style=filled]
+	25 -> 26
+	27 [label="Const (4)" fillcolor=lightgray shape=box style=filled]
+	26 -> 27
+	28 [label=Mult fillcolor=lightgray shape=box style=filled]
+	26 -> 28
+	29 [label="Var (a)" fillcolor=lightgray shape=box style=filled]
+	26 -> 29
+	30 [label=Load fillcolor=lightgray shape=box style=filled]
+	29 -> 30
+	31 [label=Mult fillcolor=lightgray shape=box style=filled]
+	25 -> 31
+	32 [label="Var (c)" fillcolor=lightgray shape=box style=filled]
+	25 -> 32
+	33 [label=Load fillcolor=lightgray shape=box style=filled]
+	32 -> 33
+	34 [label="Assign
+(Var: sol1)" fillcolor=lightgreen shape=box style=filled]
+	0 -> 34
+	35 [label="Var (sol1)" fillcolor=lightgray shape=box style=filled]
+	34 -> 35
+	36 [label=Store fillcolor=lightgray shape=box style=filled]
+	35 -> 36
+	37 [label="BinaryOp (/)" fillcolor=yellow shape=box style=filled]
+	34 -> 37
+	38 [label="BinaryOp (-)" fillcolor=yellow shape=box style=filled]
+	37 -> 38
+	39 [label=UnaryOp fillcolor=lightgray shape=box style=filled]
+	38 -> 39
+	40 [label=USub fillcolor=lightgray shape=box style=filled]
+	39 -> 40
+	41 [label="Var (b)" fillcolor=lightgray shape=box style=filled]
+	39 -> 41
+	42 [label=Load fillcolor=lightgray shape=box style=filled]
+	41 -> 42
+	43 [label=Sub fillcolor=lightgray shape=box style=filled]
+	38 -> 43
+	44 [label="Call
+(Func: Unknown)" fillcolor=pink shape=box style=filled]
+	38 -> 44
+	45 [label=Attribute fillcolor=lightgray shape=box style=filled]
+	44 -> 45
+	46 [label="Var (cmath)" fillcolor=lightgray shape=box style=filled]
+	45 -> 46
+	47 [label=Load fillcolor=lightgray shape=box style=filled]
+	46 -> 47
+	48 [label=Load fillcolor=lightgray shape=box style=filled]
+	45 -> 48
+	49 [label="Var (d)" fillcolor=lightgray shape=box style=filled]
+	44 -> 49
+	50 [label=Load fillcolor=lightgray shape=box style=filled]
+	49 -> 50
+	51 [label=Div fillcolor=lightgray shape=box style=filled]
+	37 -> 51
+	52 [label="BinaryOp (*)" fillcolor=yellow shape=box style=filled]
+	37 -> 52
+	53 [label="Const (2)" fillcolor=lightgray shape=box style=filled]
+	52 -> 53
+	54 [label=Mult fillcolor=lightgray shape=box style=filled]
+	52 -> 54
+	55 [label="Var (a)" fillcolor=lightgray shape=box style=filled]
+	52 -> 55
+	56 [label=Load fillcolor=lightgray shape=box style=filled]
+	55 -> 56
+	57 [label="Assign
+(Var: sol2)" fillcolor=lightgreen shape=box style=filled]
+	0 -> 57
+	58 [label="Var (sol2)" fillcolor=lightgray shape=box style=filled]
+	57 -> 58
+	59 [label=Store fillcolor=lightgray shape=box style=filled]
+	58 -> 59
+	60 [label="BinaryOp (/)" fillcolor=yellow shape=box style=filled]
+	57 -> 60
+	61 [label="BinaryOp (+)" fillcolor=yellow shape=box style=filled]
+	60 -> 61
+	62 [label=UnaryOp fillcolor=lightgray shape=box style=filled]
+	61 -> 62
+	63 [label=USub fillcolor=lightgray shape=box style=filled]
+	62 -> 63
+	64 [label="Var (b)" fillcolor=lightgray shape=box style=filled]
+	62 -> 64
+	65 [label=Load fillcolor=lightgray shape=box style=filled]
+	64 -> 65
+	66 [label=Add fillcolor=lightgray shape=box style=filled]
+	61 -> 66
+	67 [label="Call
+(Func: Unknown)" fillcolor=pink shape=box style=filled]
+	61 -> 67
+	68 [label=Attribute fillcolor=lightgray shape=box style=filled]
+	67 -> 68
+	69 [label="Var (cmath)" fillcolor=lightgray shape=box style=filled]
+	68 -> 69
+	70 [label=Load fillcolor=lightgray shape=box style=filled]
+	69 -> 70
+	71 [label=Load fillcolor=lightgray shape=box style=filled]
+	68 -> 71
+	72 [label="Var (d)" fillcolor=lightgray shape=box style=filled]
+	67 -> 72
+	73 [label=Load fillcolor=lightgray shape=box style=filled]
+	72 -> 73
+	74 [label=Div fillcolor=lightgray shape=box style=filled]
+	60 -> 74
+	75 [label="BinaryOp (*)" fillcolor=yellow shape=box style=filled]
+	60 -> 75
+	76 [label="Const (2)" fillcolor=lightgray shape=box style=filled]
+	75 -> 76
+	77 [label=Mult fillcolor=lightgray shape=box style=filled]
+	75 -> 77
+	78 [label="Var (a)" fillcolor=lightgray shape=box style=filled]
+	75 -> 78
+	79 [label=Load fillcolor=lightgray shape=box style=filled]
+	78 -> 79
+	80 [label=Expr fillcolor=lightgray shape=box style=filled]
+	0 -> 80
+	81 [label="Call
+(Func: print)" fillcolor=pink shape=box style=filled]
+	80 -> 81
+	82 [label="Var (print)" fillcolor=lightgray shape=box style=filled]
+	81 -> 82
+	83 [label=Load fillcolor=lightgray shape=box style=filled]
+	82 -> 83
+	84 [label="Call
+(Func: Unknown)" fillcolor=pink shape=box style=filled]
+	81 -> 84
+	85 [label=Attribute fillcolor=lightgray shape=box style=filled]
+	84 -> 85
+	86 [label="Const (The solution are {0} and {1})" fillcolor=lightgray shape=box style=filled]
+	85 -> 86
+	87 [label=Load fillcolor=lightgray shape=box style=filled]
+	85 -> 87
+	88 [label="Var (sol1)" fillcolor=lightgray shape=box style=filled]
+	84 -> 88
+	89 [label=Load fillcolor=lightgray shape=box style=filled]
+	88 -> 89
+	90 [label="Var (sol2)" fillcolor=lightgray shape=box style=filled]
+	84 -> 90
+	91 [label=Load fillcolor=lightgray shape=box style=filled]
+	90 -> 91
+}
