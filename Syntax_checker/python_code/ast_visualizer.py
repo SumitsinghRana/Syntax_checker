@@ -1,6 +1,6 @@
 import ast
 import graphviz
-import os
+import os 
 
 
 class ASTVisualizer(ast.NodeVisitor):
@@ -108,3 +108,4 @@ if x > 10:
     visualizer = ASTVisualizer()
     image_path = visualizer.visualize(code)
     print(f"AST visualization saved at: {image_path}")
+    
